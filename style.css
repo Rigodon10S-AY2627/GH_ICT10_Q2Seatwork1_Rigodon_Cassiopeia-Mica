@@ -1,0 +1,181 @@
+body {
+    background-color: #f4efe7;
+    color: #202936;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.hero {
+    background-color: #172c4a;
+    color: white;
+    padding: 55px 8% 65px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "SEA";
+    position: absolute;
+    right: 7%;
+    bottom: -30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 150px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05);
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #d9c9bb;
+}
+
+.hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(45px, 7vw, 78px);
+    line-height: 0.95;
+    max-width: 850px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero h1 span {
+    color: #d97952;
+}
+
+.description {
+    max-width: 500px;
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #d9e0e8;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 70px 25px;
+}
+
+.lookup-card {
+    background-color: #fffdf8;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 45px;
+    border: 1px solid #d7d0c5;
+    box-shadow: 12px 12px 0 #d9d0c3;
+    position: relative;
+}
+
+.lookup-card::before {
+    content: "ATLAS ENTRY";
+    position: absolute;
+    top: -13px;
+    left: 35px;
+    background-color: #d97952;
+    color: white;
+    padding: 6px 15px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #64748b;
+    margin-top: 10px;
+}
+
+.lookup-card h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #172c4a;
+    font-size: 38px;
+    margin: 8px 0 30px;
+}
+
+.form-select {
+    height: 58px;
+    border: 2px solid #172c4a;
+    border-radius: 30px;
+    background-color: #f7f3ec;
+    color: #172c4a;
+    padding: 0 22px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-select:focus {
+    border-color: #d97952;
+    box-shadow: 0 0 0 3px rgba(217, 121, 82, 0.15);
+}
+
+.btn-atlas {
+    height: 52px;
+    margin-top: 15px;
+    padding: 0 28px;
+    background-color: #172c4a;
+    color: white;
+    border: none;
+    border-radius: 26px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.btn-atlas:hover {
+    background-color: #172c4a;
+    color: white;
+    box-shadow: 0 6px 0 #d97952;
+}
+
+.btn-atlas:focus {
+    background-color: #172c4a;
+    color: white;
+    box-shadow: none;
+}
+
+.btn-atlas:active,
+.btn-atlas:active:focus {
+    background-color: #172c4a;
+    color: white;
+    box-shadow: none;
+}
+
+#result {
+    margin-top: 35px;
+    padding: 30px;
+    background-color: #eef1f3;
+    border: 1px dashed #9ca8b5;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #172c4a;
+}
+
+#result::before {
+    content: "COUNTRY PROFILE";
+    display: block;
+    margin-bottom: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #d97952;
+}
+
+footer {
+    background-color: #172c4a;
+    color: #d9e0e8;
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
